@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/difficultyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Δυσκολία"
+        android:textSize="12dp"
+
+        android:textColor="@color/blackText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radiogroup_stroke"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/lowDifficultyCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:checked="true"
+            android:text="Χαμηλή"
+            android:textColor="@drawable/custom_radiobutton_textcolor"
+            android:background="@drawable/custom_radiobutton"
+            android:button="@null"
+            android:drawableRight="@drawable/custom_checkbox_difficulty"
+            />
+
+        <CheckBox
+            android:id="@+id/mediumDifficultyCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:checked="true"
+            android:text="Μέτρια"
+            android:textColor="@drawable/custom_radiobutton_textcolor"
+            android:background="@drawable/custom_radiobutton"
+            android:button="@null"
+            android:drawableRight="@drawable/custom_checkbox_difficulty"
+            />
+
+        <CheckBox
+            android:id="@+id/highDifficultyCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:text="Υψηλή"
+            android:textColor="@drawable/custom_radiobutton_textcolor"
+            android:background="@drawable/custom_radiobutton"
+            android:button="@null"
+            android:drawableRight="@drawable/custom_checkbox_difficulty"
+            />
+    </LinearLayout>
+</LinearLayout>

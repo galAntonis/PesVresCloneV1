@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/teamsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Αριθμός ομάδων"
+        android:textSize="12dp"
+        android:textColor="@color/blackText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radiogroup_stroke"
+        android:layout_marginTop="12dp"
+        android:padding="5dp">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/twoTeamsRadioBtn"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="true"
+                android:background="@drawable/custom_radiobutton"
+                android:textColor="@drawable/custom_radiobutton_textcolor"
+                android:text="2 ομάδες" />
+
+            <RadioButton
+                android:id="@+id/threeTeamsRadioBtn"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="false"
+                android:background="@drawable/custom_radiobutton"
+                android:textColor="@drawable/custom_radiobutton_textcolor"
+                android:text="3 ομάδες" />
+
+            <RadioButton
+                android:id="@+id/fourTeamsRadioBtn"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:checked="false"
+                android:background="@drawable/custom_radiobutton"
+                android:textColor="@drawable/custom_radiobutton_textcolor"
+                android:text="4 ομάδες" />
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>
